@@ -19,7 +19,7 @@ public class MemberService {
     @Transactional
     public MemberEntity createMember(MemberRequest memberRequest) {
         final MemberEntity memberEntity = new MemberEntity();
-        memberEntity.setNickname(memberEntity.getNickname());
+        memberEntity.setNickname(memberRequest.getNickname());
         memberEntity.setToken(memberRequest.getToken());
         return memberRepository.save(memberEntity);
     }

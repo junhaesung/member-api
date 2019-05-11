@@ -19,7 +19,7 @@ public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "member_id")
-    private String memberId;
+    private Integer memberId;
 
     @Column(name = "token")
     private String token;
